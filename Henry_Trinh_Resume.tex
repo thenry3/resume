@@ -1,0 +1,245 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Original author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Modifications by:
+% Henry Trinh <henrymtrinh14@gmail.com>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{profile}
+\name{Henry}{Trinh}
+% \position{Software Engineer}
+% \address{address}
+
+\mobile{(408) 324-6330}
+\email{henrymtrinh14@gmail.com}
+\homepage{henrytrinh.xyz}
+\github{thenry3}
+\linkedin{thenry3}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\vspace*{-0.35in}
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+\vspace*{-0.18in}
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% \makecvfooter
+%   {\today}
+%   {Henry Trinh~~~·~~~Résumé}
+%   {\thepage}
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+% EDUCATION
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {Bachelor of Science in Computer Science} % Degree
+    {University of California, Los Angeles} % Institution
+    {Expected Graduation in June 2022} % Location
+    {Major GPA: 3.9} % Date(s)
+    {
+      \vspace{-0.11in}
+      \begin{cvskills}
+        \cvskill
+          {Courses} % Type
+          {Data Structures, Algorithms, Operating Systems, Linear Algebra, Discrete Math, Software Construction Laboratory} % Skillset
+      \end{cvskills}
+    }
+  \vspace{-0.2in}
+\end{cventries}
+
+% EXPERIENCE
+\cvsection{Experience}
+\begin{cventries}
+  \cventry
+    {Software Development Engineer Intern} % Job title
+    {Amazon} % Organization
+    {Seattle, WA} % Location
+    {June 2020 - PRESENT} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Contributing in AWS Cryptography in Summer 2020}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Research Assistant} % Job title
+    {Center for Vision, Cognition, Learning, and Autonomy} % Organization
+    {Los Angeles, CA} % Location
+    {April 2020 - PRESENT} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Researching LSTM neural networks with social pooling for path planning and trajectory prediction}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Software Engineer Intern} % Job title
+    {Archanics} % Organization
+    {El Segundo, CA} % Location
+    {June 2019 - August 2020} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed Android GIS/GPS map application with real-time traffic analysis and 3-D geographical layers}
+        \item {Programmed mapping functionalities to generate routes, invite people to events, and display multiple datasets}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Lead Software Developer} % Job title
+    {Daily Bruin} % Organization
+    {Los Angeles, CA} % Location
+    {April 2019 - PRESENT} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Built database infrastructure and optimized database querying in API endpoints for multiple projects}
+		    \item {Constructed customizable components for the Daily Bruin Lux library, resulting in faster website development}
+		    \item {Increased number of average users by 10\% by improving mobile user experience in new interactive flat pages}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+% PROJECTS
+\cvsection{Projects}
+\begin{cventries}
+  \cventry
+    {} % Empty position
+    {Simultaneous Location and Mapping (SLAM) Tool} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      \vspace{-0.2in}
+      \begin{cvitems} % Description(s) bullet points
+        \item {Developed tool to generate a three-dimensional map of an environment by analyzing a given video}
+		    \item {Implemented an algorithm to extract features and camera pose from images to render points in 3-D space}
+      \end{cvitems}
+    }
+
+  \cventry
+    {} % Empty position
+    {Tongits} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      \vspace{-0.2in}
+      \begin{cvitems} % Description(s) bullet points
+      	\item {Implemented Android application of a Filipino card game with AI opponents, music, and point scoring}
+		    \item 
+            \textbf{Over 12,000 downloads} on the Google Play Store
+      \end{cvitems}
+    }
+
+  \cventry
+    {} % Empty position
+    {Drug Decider} % Project
+    {} % Empty location
+    {} % Empty date
+    {
+      \vspace{-0.2in}
+      \begin{cvitems} % Description(s) bullet points
+      	\item {Designed database schema and created REST API endpoints to connect the user interface with the machine learning model and database}
+		    \item {Fixed bugs in machine learning model for predicting a patient’s treatment response to anti-psychotics}
+        \item
+            Used in production by the UCLA David Geffen School of Medicine at \href{https://drugdecider.org}{\textbf{drugdecider.org}}
+      \end{cvitems}
+    }
+
+  \cventry
+    {}
+    {Pinstagrad}
+    {}
+    {}
+    {
+      \vspace{-0.2in}
+      \begin{cvitems} % Description(s) bullet points
+      	\item {Built data pipeline to connect the database with cloud photo storage to maximize retrieval efficiency for displaying multiple photos for a graduation photo sharing platform}
+		    \item {Implemented user photo submission form with photo preview and tagging features}
+      \end{cvitems}
+    }
+\end{cventries}
+
+% SKILLS
+\cvsection{Skills}
+\begin{cvskills}
+  \cvskill
+    {Languages} % Type
+    {Python, Java, C++, C, JavaScript, TypeScript, Go, HTML, CSS} % Skillset
+
+  \cvskill
+    {Frameworks + Tools} % Type
+    {PyTorch, React, Django, Node, Git, Docker, OpenCV, MongoDB, mySQL, PostgreSQL, Numpy} % Skillset
+  
+  \cvskill
+    {Technologies} % Type
+    {Machine Learning, Computer Vision, SLAM, Android, SQL, noSQL, Web Development} % Skillset
+    
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+\end{document}
