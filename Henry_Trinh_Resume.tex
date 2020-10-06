@@ -22,6 +22,7 @@
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[12pt, letterpaper]{awesome-cv}
+\usepackage{graphicx}
 
 % Configure page margins with geometry
 \geometry{left=0.5in, top=0.5in, right=0.5in, bottom=0.5in}
@@ -100,16 +101,16 @@
 \begin{cventries}
   \cventry
     {Bachelor of Science in Computer Science} % Degree
-    {University of California, Los Angeles} % Institution
+    {University of California Los Angeles} % Institution
     {Expected Graduation in June 2022} % Location
     {Major GPA: 3.9} % Date(s)
     {
-      \vspace{-0.11in}
-      \begin{cvskills}
-        \cvskill
-          {Courses} % Type
-          {Data Structures, Algorithms, Operating Systems, Linear Algebra, Discrete Math, Sof\/tware Construction Laboratory} % Skillset
-      \end{cvskills}
+      % \vspace{-0.11in}
+      % \begin{cvskills}
+      %   \cvskill
+      %     {Courses} % Type
+      %     {Data Structures, Algorithms, Operating Systems, Linear Algebra, Discrete Math, Sof\/tware Construction Laboratory} % Skillset
+      % \end{cvskills}
     }
   \vspace{-0.2in}
 \end{cventries}
@@ -119,12 +120,34 @@
 \begin{cventries}
   \cventry
     {Sof\/tware Engineer Intern} % Job title
-    {Tesla} % Organization
-    {Palo Alto, CA} % Location
-    {Fall 2020} % Date(s)
+    {Snap Inc.} % Organization
+    {Los Angeles, CA} % Location
+    {Summer 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Will contribute in Infotainment UI team} 
+        \item {Boo}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Sof\/tware Engineer Intern} % Job title
+    {Nuro} % Organization
+    {Mountain View, CA} % Location
+    {Spring 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Machine Learning Infrastructure}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Sof\/tware Engineer Intern} % Job title
+    {Tesla} % Organization
+    {Palo Alto, CA} % Location
+    {September 2020 - PRESENT} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed new search feature for locating amenities surrounding a user-selected Supercharger}
       \end{cvitems}
     }
 
@@ -132,10 +155,10 @@
     {Sof\/tware Development Engineer Intern} % Job title
     {Amazon} % Organization
     {Seattle, WA} % Location
-    {June 2020 - PRESENT} % Date(s)
+    {June 2020 - September 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Improved scalability and performance for a console's infrastructure by transferring it to serverless architecture} 
+        \item {Improved scalability and performance for console infrastructure by migrating to serverless architecture} 
         \item {Built new pipeline for automated, progressive deployments of certificate manager service with automatic rollbacks}
         \item {Implemented server logs and latency metrics using AWS CloudWatch }
       \end{cvitems}
@@ -154,17 +177,17 @@
       \end{cvitems}
     }
 
-  \cventry
-    {Sof\/tware Engineer Intern} % Job title
-    {Archanics} % Organization
-    {El Segundo, CA} % Location
-    {June 2019 - August 2019} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed Android GIS/GPS map application with real-time traf\/fic analysis and 3-D geographic layers}
-        \item {Programmed mapping functionalities to generate routes, invite people to events, and display multiple datasets}
-      \end{cvitems}
-    }
+  % \cventry
+  %   {Sof\/tware Engineer Intern} % Job title
+  %   {Archanics} % Organization
+  %   {El Segundo, CA} % Location
+  %   {June 2019 - August 2019} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Developed Android GIS/GPS\/ map application with real-time traf\/fic analysis and 3-D geographic layers}
+  %       \item {Programmed\/ mapping functionalities to generate routes, invite people to events, and display multiple datasets}
+  %     \end{cvitems}
+  %   }
 
   \cventry
     {Lead Sof\/tware Developer} % Job title
@@ -173,9 +196,9 @@
     {April 2019 - June 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Built database infrastructure and optimized database querying in API endpoints for multiple projects}
-		    \item {Constructed customizable components for the Daily Bruin Lux library, resulting in faster website development}
-		    \item {Increased number of average users by 10\% by improving mobile user experience in new interactive flat pages}
+        \item {Created and deployed 10+ interactive web applications with 100k+ views with a team of 10 developers}
+        \item {Built database infrastructure and wrote APIs for multiple projects}
+		    \item {Constructed customizable components for the Daily Bruin Lux library to improve development speed}
       \end{cvitems}
     }
 
@@ -184,30 +207,30 @@
 % PROJECTS
 \cvsection{Projects}
 \begin{cventries}
-  \cventry
-    {} % Empty position
-    {Simultaneous Location and Mapping (SLAM) Tool} % Project
-    {} % Empty location
-    {} % Empty date
-    {
-      \vspace{-0.2in}
-      \begin{cvitems} % Description(s) bullet points
-        \item {Developed tool to generate a three-dimensional map of an environment by analyzing any given video}
-		    \item {Performed video and image processing using OpenCV to extract features from images and render their points in 3-D space}
-      \end{cvitems}
-    }
+  % \cventry
+  %   {} % Empty position
+  %   {Simultaneous Location and Mapping (SLAM) Tool} % Project
+  %   {} % Empty location
+  %   {} % Empty date
+  %   {
+  %     \vspace{-0.2in}
+  %     \begin{cvitems} % Description(s) bullet points
+  %       \item {Developed tool to generate a three-dimensional map of an environment by analyzing any given video}
+	% 	    \item {Performed video and image processing using OpenCV to extract features from images and render their points in 3-D space}
+  %     \end{cvitems}
+  %   }
 
   \cventry
-    {} % Empty position
+    {\href{http://tiny.cc/tongits}{tiny.cc/tongits}} % Empty position
     {Tongits} % Project
     {} % Empty location
     {} % Empty date
     {
-      \vspace{-0.2in}
+      % \vspace{-0.2in}
       \begin{cvitems} % Description(s) bullet points
       	\item {Implemented Android application of a Filipino card game with AI opponents, music, and point scoring}
 		    \item 
-            Gained over \href{https://play.google.com/store/apps/details?id=com.creativelabs.tongits&hl=en_US/}{\textbf{12,000 downloads on Google Play Store}}
+            Gained over \href{https://play.google.com/store/apps/details?id=com.creativelabs.tongits&hl=en_US/}{\textbf{13,000 downloads on Google Play Store}}
       \end{cvitems}
     }
 
@@ -219,10 +242,10 @@
   %   {
   %     \vspace{-0.2in}
   %     \begin{cvitems} % Description(s) bullet points
-  %     	\item {Designed database schema and created REST API endpoints to connect the user interface with the machine learning model and database}
-	% 	    \item {Fixed bugs in machine learning model for predicting a patient’s treatment response to anti-psychotics}
+  %     	\item {Designed database schema and REST APIs to connect the user interface with the machine learning model and database}
+	% 	    % \item {Fixed bugs in machine learning model for predicting a patient’s treatment response to anti-psychotics}
   %       \item
-  %           Used in production by the UCLA David Gef\/fen School of Medicine at \href{https://drugdecider.org}{\textbf{drugdecider.org}}
+  %           Used in production by the UCLA David Gef\/fen School of Medicine at \href{https://drugdecider.org}{\textbf{drugdecider.org} to predict a patient's response to anti-psychotics}
   %     \end{cvitems}
   %   }
 
@@ -245,7 +268,7 @@
 \begin{cvskills}
   \cvskill
     {Languages} % Type
-    {Python, Java, C++, C, JavaScript, TypeScript, Go, HTML, CSS} % Skillset
+    {Python, Java, C++, C, JavaScript, TypeScript, SQL, HTML, CSS} % Skillset
 
   \cvskill
     {Frameworks + Tools} % Type
@@ -253,7 +276,7 @@
   
   \cvskill
     {Technologies} % Type
-    {Machine Learning, Deep Learning, Android, Computer Vision, SLAM, SQL, noSQL, Web Development} % Skillset
+    {Machine Learning, Android, Computer Vision, SLAM, Databases, Web Development} % Skillset
     
 \end{cvskills}
 
