@@ -1,4 +1,4 @@
-%!TEX TS-program = xelatex
+%!TEX program = xelatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
 %
@@ -91,40 +91,10 @@
 %   {\today}
 %   {Henry Trinh~~~·~~~Résumé}
 %   {\thepage}
-
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-
-% EDUCATION
-\cvsection{Education}
-\begin{cventries}
-  % \cventry
-  %   {M.S. Computer Science} % Degree
-  %   {University of California, Los Angeles} % Institution
-  %   {Los Angeles, CA} % Location
-  %   {September 2022 -- June 2023} % Date(s)
-  %   {
-  %   }
-
-  % \vspace{-0.2in}
-  \cventry
-    {B.S. Computer Science, Major GPA: 3.8} % Degree
-    {University of California, Los Angeles} % Institution
-    {Los Angeles, CA} % Location
-    {September 2018 -- June 2022} % Date(s)
-    {
-      % \vspace{-0.11in}
-      % \begin{cvskills}
-      %   \cvskill
-      %     {Courses} % Type
-      %     {Deep Learning, Data Structures, Algorithms, Operating Systems, Computer Graphics} % Skillset
-      % \end{cvskills}
-    }
-  \vspace{-0.2in}
-\end{cventries}
-
 % EXPERIENCE
 \cvsection{Experience}
 \begin{cventries}
@@ -132,22 +102,22 @@
     {Sof\/tware Engineer Intern} % Job title
     {Snap Inc.} % Organization
     {Los Angeles, CA} % Location
-    {January 2021 -- PRESENT} % Date(s)
+    {Spring 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Camera Engine}
+        \item {Camera}
       \end{cvitems}
     }
 
   \cventry
-    {Sof\/tware Engineer Intern - Golang} % Job title
+    {Sof\/tware Engineer Intern — Golang} % Job title
     {Snap Inc.} % Organization
     {Los Angeles, CA} % Location
-    {September 2021 -- December 2021} % Date(s)
+    {Sept. 2021 -- Dec. 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Designed multithreaded system to configure creative tools ranking pipelines without deploying or code changes}
-        \item {Created unit tests and metrics dashboards to keep track of server health}
+        \item {Created unit tests and metrics dashboards to keep track of server health and pipeline configuration updates}
       \end{cvitems}
     }
 
@@ -155,10 +125,10 @@
     {Sof\/tware Engineer Intern — C++} % Job title
     {Two Sigma} % Organization
     {New York, NY} % Location
-    {June 2021 -- August 2021} % Date(s)
+    {Jun. 2021 -- Aug. 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Built high performance server for ingesting market data and calculating NBBO quotes for options, improving trading speed by 300\%}
+        \item {Built server for ingesting market data and calculating NBBO option quotes, improving trading speed by 300\%}
         \item {Implemented server logging to track metrics such as number of quotes ingested and latency times}
         \item {Wrote scripts for generating test data and end-to-end integration testing}
       \end{cvitems}
@@ -169,7 +139,7 @@
     {Sof\/tware Engineer Intern — Python} % Job title
     {Nuro} % Organization
     {Mountain View, CA} % Location
-    {March 2021 -- June 2021} % Date(s)
+    {Mar. 2021 -- Jun. 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
       	\item {Optimized routing algorithm for mapping roads using integer programming, reducing cost per square mile by 30\%}
@@ -183,25 +153,25 @@
     {Sof\/tware Engineer Intern — C++} % Job title
     {Tesla} % Organization
     {Palo Alto, CA} % Location
-    {September 2020 -- December 2020} % Date(s)
+    {Sept. 2020 -- Dec. 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Released new search feature for locating close amenities surrounding a user-selected Supercharger, requested by thousands of drivers}
-        \item {Programmed an algorithm to allow drivers to search for places along their route, optimizing total trip time by minimizing detours}
-        \item {Developed navigation feature for drivers to create and edit trip waypoints with battery management}
+        \item {Released new search feature for locating close amenities surrounding a user-selected Supercharger}
+        \item {Programmed an algorithm to allow drivers to search for places along their route, optimizing trip time by minimizing detours}
+        % \item {Developed navigation feature for drivers to create and edit trip waypoints with battery management}
         \item {Enhanced driver experience by fixing firmware bugs within maps and navigation in vehicles}
       \end{cvitems}
     }
 
   \cventry
-    {Sof\/tware Development Engineer Intern — TypeScript, Java, AWS} % Job title
+    {Sof\/tware Development Engineer Intern — TypeScript, Java} % Job title
     {Amazon} % Organization
     {Seattle, WA} % Location
-    {June 2020 -- September 2020} % Date(s)
+    {Jun. 2020 -- Sept. 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Improved scalability and performance for console infrastructure by migrating to serverless architecture} 
-        \item {Constructed new pipeline for automated, progressive deployments of certificate manager service with automatic rollbacks to prevent broken releases}
+        \item {Improved scalability and performance for Certifate Manager console infrastructure by migrating to serverless architecture} 
+        % \item {Constructed pipeline for automated deployments of service with automatic rollbacks to prevent broken releases}
         \item {Established server logs and latency metrics to increase ease of maintenance of the Certificate Manager console}
       \end{cvitems}
     }
@@ -210,12 +180,12 @@
     {Research Assistant — Python, PyTorch} % Job title
     {Center for Vision, Cognition, Learning, and Autonomy} % Organization
     {Los Angeles, CA} % Location
-    {April 2020 -- October 2020} % Date(s)
+    {Apr. 2020 -- Oct. 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Researched path planning and trajectory prediction for autonomous vehicles using deep learning}
-        \item {Implemented LSTM neural network with social pooling to determine possible trajectories of human movement in dense crowds}
-        \item {Created tool to preprocess raw data into loadable binary files, improving data pipeline performance and saving minutes of processing time}
+        \item {Implemented LSTM neural network with social pooling to determine possible trajectories of human movement in crowds}
+        % \item {Created tool to preprocess raw data into loadable binary files, improving data pipeline performance and saving minutes of processing time}
       \end{cvitems}
     }
 
@@ -244,6 +214,34 @@
   %     \end{cvitems}
   %   }
 
+\end{cventries}
+
+% EDUCATION
+\cvsection{Education}
+\begin{cventries}
+  % \cventry
+  %   {M.S. Computer Science} % Degree
+  %   {University of California, Los Angeles} % Institution
+  %   {Los Angeles, CA} % Location
+  %   {September 2022 -- June 2023} % Date(s)
+  %   {
+  %   }
+
+  % \vspace{-0.2in}
+  \cventry
+    {B.S. Computer Science, Major GPA: 3.8} % Degree
+    {University of California, Los Angeles} % Institution
+    {Los Angeles, CA} % Location
+    {September 2018 -- March 2022} % Date(s)
+    {
+      % \vspace{-0.11in}
+      % \begin{cvskills}
+      %   \cvskill
+      %     {Courses} % Type
+      %     {Deep Learning, Data Structures, Algorithms, Operating Systems, Computer Graphics} % Skillset
+      % \end{cvskills}
+    }
+  \vspace{-0.2in}
 \end{cventries}
 
 %%%%PROJECTS
@@ -313,13 +311,17 @@
     {Languages} % Type
     {Python, C/C++, Golang, Java, JavaScript, TypeScript, SQL, HTML, CSS} % Skillset
 
+  % \cvskill
+  %   {Frameworks + Tools} % Type
+  %   {Git, gRPC, React, PyTorch, MongoDB, Django, Node, Docker, OpenCV, mySQL, PostgreSQL, Numpy} % Skillset
+
   \cvskill
-    {Frameworks + Tools} % Type
-    {Git, gRPC, React, PyTorch, MongoDB, Django, Node, Docker, OpenCV, mySQL, PostgreSQL, Numpy} % Skillset
+  {Frameworks + Tools} % Type
+  {PyTorch, Git, gRPC, React, Qt, MongoDB, Django, Node, Docker, OpenCV, mySQL} % Skillset
   
-  \cvskill
-    {Technologies} % Type
-    {Full Stack, Machine Learning, Computer Vision, SLAM, Android, Databases} % Skillset
+  % \cvskill
+  %   {Technologies} % Type
+  %   {Full Stack, Machine Learning, Computer Vision, SLAM, Android, Databases} % Skillset
     
 \end{cvskills}
 
